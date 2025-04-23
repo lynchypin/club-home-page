@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAA Club - Home</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-blue: #1B1B4B;
+            --accent-red: #CC0000;
+        }
+        
+        .club-nav-item:hover {
+            border-bottom: 2px solid var(--accent-red);
+        }
+        
+        .hero-slider {
+            height: 600px;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-[#1B1B4B] text-white">
+        <!-- Top Bar -->
+        <div class="bg-[#CC0000] py-2">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <div class="text-sm">
+                    Next Match: County Finals - Sept 30th, 3PM
+                </div>
+                <div class="flex gap-4">
+                    <a href="#" class="text-sm hover:text-gray-200">Member Login</a>
+                    <a href="#" class="text-sm hover:text-gray-200">Register</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Header -->
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <!-- Replace with actual logo -->
+                    <img src="https://placehold.co/150x60" alt="Club Logo" class="h-15">
+                </div>
+                
+                <nav class="hidden md:flex gap-6">
+                    <a href="#" class="club-nav-item py-2">Home</a>
+                    <a href="#" class="club-nav-item py-2">About</a>
+                    <a href="#" class="club-nav-item py-2">Teams</a>
+                    <a href="#" class="club-nav-item py-2">Fixtures</a>
+                    <a href="#" class="club-nav-item py-2">News</a>
+                    <a href="#" class="club-nav-item py-2">Shop</a>
+                    <a href="#" class="club-nav-item py-2">Sponsors</a>
+                    <a href="#" class="club-nav-item py-2">Contact</a>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-slider relative" style="background-image: url('https://placehold.co/1920x600')">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="container mx-auto px-4 h-full flex items-center relative">
+            <div class="text-white max-w-2xl">
+                <h1 class="text-5xl font-bold mb-4">Welcome to Our GAA Club</h1>
+                <p class="text-xl mb-6">Join us in celebrating our rich history and bright future in Gaelic football</p>
+                <div class="flex gap-4">
+                    <a href="#" class="bg-[#CC0000] px-6 py-3 rounded-lg hover:bg-red-700">Join Now</a>
+                    <a href="#" class="border-2 border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="bg-[#1B1B4B] text-white py-4">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-4 gap-4">
+                <a href="#" class="text-center py-2 border-r border-gray-600">Next Match</a>
+                <a href="#" class="text-center py-2 border-r border-gray-600">Buy Tickets</a>
+                <a href="#" class="text-center py-2 border-r border-gray-600">Shop Now</a>
+                <a href="#" class="text-center py-2">Join Club</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Latest News</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Featured News -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://placehold.co/600x400" alt="News" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">County Final Victory</h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        <a href="#" class="text-[#CC0000] font-semibold">Read More →</a>
+                    </div>
+                </div>
+                <!-- More news items -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://placehold.co/600x400" alt="News" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Youth Development Program</h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        <a href="#" class="text-[#CC0000] font-semibold">Read More →</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://placehold.co/600x400" alt="News" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">New Sponsorship Deal</h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        <a href="#" class="text-[#CC0000] font-semibold">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixtures & Results -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Fixtures -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Upcoming Fixtures</h2>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <!-- Fixture Item -->
+                        <div class="border-b border-gray-200 py-4">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <p class="text-sm text-gray-500">Sept 30, 3:00 PM</p>
+                                    <p class="font-semibold">Our Club vs Rival Club</p>
+                                </div>
+                                <a href="#" class="bg-[#CC0000] text-white px-4 py-2 rounded-lg text-sm">Details</a>
+                            </div>
+                        </div>
+                        <!-- More fixtures... -->
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Recent Results</h2>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <!-- Result Item -->
+                        <div class="border-b border-gray-200 py-4">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <p class="text-sm text-gray-500">Sept 23</p>
+                                    <p class="font-semibold">Our Club 2-15 vs 1-12 Other Club</p>
+                                </div>
+                                <a href="#" class="text-[#CC0000] font-semibold">Report →</a>
+                            </div>
+                        </div>
+                        <!-- More results... -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Preview -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Club Shop</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Shop Item -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://placehold.co/300x300" alt="Jersey" class="w-full">
+                    <div class="p-4">
+                        <h3 class="font-semibold">Club Jersey 2025</h3>
+                        <p class="text-gray-600">€65.00</p>
+                        <button class="w-full bg-[#1B1B4B] text-white py-2 mt-4 rounded-lg hover:bg-[#CC0000]">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                <!-- More shop items... -->
+            </div>
+            <div class="text-center mt-8">
+                <a href="#" class="inline-block bg-[#CC0000] text-white px-8 py-3 rounded-lg hover:bg-red-700">
+                    Visit Club Shop
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Our Sponsors</h2>
+            <!-- Main Sponsor -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-8 text-center">
+                <img src="https://placehold.co/400x150" alt="Flannery's Irish Pub" class="mx-auto mb-4">
+                <h3 class="text-xl font-bold">Principal Sponsor - Flannery's Irish Pub</h3>
+            </div>
+            <!-- Other Sponsors -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="https://placehold.co/200x100" alt="Sponsor" class="mx-auto">
+                </div>
+                <!-- More sponsor logos... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-12 bg-[#1B1B4B] text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
+                <p class="mb-6">Subscribe to our newsletter for the latest news and updates</p>
+                <form class="flex gap-4">
+                    <input type="email" placeholder="Enter your email" 
+                           class="flex-1 px-4 py-3 rounded-lg text-black">
+                    <button type="submit" 
+                            class="bg-[#CC0000] px-6 py-3 rounded-lg hover:bg-red-700">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1B1B4B] text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">About Us</h3>
+                    <p class="text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Teams</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Fixtures</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">News</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Shop</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>123 Club Road</li>
+                        <li>County, Ireland</li>
+                        <li>Phone: (123) 456-7890</li>
+                        <li>Email: info@gaaclub.ie</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <!-- Facebook icon -->
+                            </svg>
+                        </a>
+                        <!-- More social icons... -->
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-center text-gray-300">
+                <p>&copy; 2025 GAA Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Basic JavaScript for mobile menu toggle -->
+    <script>
+        // Mobile menu functionality would go here
+    </script>
+</body>
+</html>
